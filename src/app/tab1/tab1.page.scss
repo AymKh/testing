@@ -1,0 +1,47 @@
+.gridLayout {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "c1 c2"
+        "bottom bottom";
+    gap: 1rem;
+}
+
+.card,
+.card-small {
+    width: 100%;
+    min-height: 200px;
+    background-color: #1a1e24;
+    border-radius: .5rem;
+    padding: .5rem;
+    color: white;
+
+    ion-icon {
+        font-size: 2rem;
+        opacity: .5;
+    }
+
+    small {
+        font-size: 1rem;
+    }
+}
+
+.top {
+    grid-area: top;
+}
+
+.c1 {
+    grid-area: c1;
+}
+
+.c2 {
+    grid-area: c2;
+}
+
+.bottom {
+    grid-area: bottom;
+}
